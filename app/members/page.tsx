@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 export default function Members() {
   return (
-    <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
       <div className="px-4 py-6 sm:px-0">
-        <div className="border-4 border-dashed border-gray-200 rounded-lg p-6 bg-white">
-          <h1 className="text-2xl font-bold mb-6">For Members</h1>
+        <div className="rounded-lg border-4 border-dashed border-gray-200 bg-white p-6">
+          <h1 className="mb-6 text-2xl font-bold">For Members</h1>
           
           <p className="mb-4">
             Students involved in our member organization have access to a variety of different resources within the Satire Guild. These include:
           </p>
 
-          <ul className="space-y-4 mb-8 list-disc pl-5">
+          <ul className="mb-8 list-disc space-y-4 pl-5">
             <li>New Leader Mentorship</li>
             <li>Guest Writing Opportunities</li>
             <li>National Leadership & Visibility</li>
