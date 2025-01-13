@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Members() {
   return (
     <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">

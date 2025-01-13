@@ -1,3 +1,5 @@
+/* eslint-disable tailwindcss/enforces-shorthand */
+/* eslint-disable tailwindcss/classnames-order */
 import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Serif } from 'next/font/google'
@@ -59,13 +61,13 @@ export default function RootLayout({
 
                 {/* Mobile Navigation */}
                 <Sheet>
-                  <SheetTrigger asChild className="md:hidden">
-                    <Button variant="outline" size="icon">
+                  <SheetTrigger asChild className="md:hidden ">
+                    <Button variant="outline" size="icon" >
                       <Menu className="h-6 w-6" />
                       <span className="sr-only">Open menu</span>
                     </Button>
                   </SheetTrigger>
-                  <SheetContent>
+                  <SheetContent >
                     <div className="flex flex-col space-y-4 mt-4">
                       <Link href="/members" className="text-lg">
                         For Members
