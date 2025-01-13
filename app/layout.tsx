@@ -10,6 +10,9 @@ import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -61,13 +64,17 @@ export default function RootLayout({
 
                 {/* Mobile Navigation */}
                 <Sheet>
-                  <SheetTrigger asChild className="md:hidden ">
+                  <SheetTrigger asChild className="md:hidden">
                     <Button variant="outline" size="icon" >
                       <Menu className="h-6 w-6" />
                       <span className="sr-only">Open menu</span>
                     </Button>
                   </SheetTrigger>
-                  <SheetContent >
+                  <SheetHeader className='sr-only'>
+                  <SheetTitle>Menu</SheetTitle>
+                    <SheetDescription>Select a page</SheetDescription>
+                  </SheetHeader>
+                  <SheetContent>
                     <div className="flex flex-col space-y-4 mt-4">
                       <Link href="/members" className="text-lg">
                         For Members
