@@ -41,20 +41,20 @@ export default function Leadership() {
   ]
 
   return (
-    <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
       <div className="px-4 py-6 sm:px-0">
-        <div className="border-4 border-dashed border-gray-200 rounded-lg p-6 bg-white">
-          <h2 className="text-2xl font-semibold mb-6">Leadership</h2>
+        <div className="rounded-lg border-4 border-dashed border-gray-200 bg-white p-6">
+          <h2 className="mb-6 text-2xl font-semibold">Leadership</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {leaders.map((leader) => (
               <div key={leader.name} className="flex flex-col items-center text-center">
-                <div className="relative w-48 h-48 mb-4">
+                <div className="relative mb-4 size-48">
                   <Image
                     src={leader.image}
                     alt={`${leader.name}, ${leader.role}`}
                     fill
-                    className="object-cover rounded-lg"
+                    className="rounded-lg object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -66,7 +66,7 @@ export default function Leadership() {
             ))}
           </div>
 
-          <div className="border-t border-gray-200 pt-8 mt-8 text-sm text-gray-600">
+          <div className="mt-8 border-t border-gray-200 pt-8 text-sm text-gray-600">
             <p className="mb-4">
               College Satire Guild is a registered 501(c)(3) nonprofit organization (EIN: 88-3624801) based in Des Moines, Iowa. 
               Any contributions are tax-deductible to the extent permitted by the law.
